@@ -13,12 +13,12 @@ init -1 python hide:
     ## set to False before the game is released, so the user can't
     ## cheat using developer tools.
 
-    config.developer = False
+    config.developer = True
 
     ## These control the width and height of the screen.
 
-    config.screen_width = 800
-    config.screen_height = 600
+    config.screen_width = 640
+    config.screen_height = 480
 
     ## This controls the title of the window, when Ren'Py is
     ## running in a window.
