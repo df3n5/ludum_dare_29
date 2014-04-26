@@ -6,10 +6,10 @@
 # Declare characters used by this game.
 #define e = Character('Jonathan', color="#c8ffc8")
 #define m = Character('Aoife', color="#ffffff")
-    
 
 # The game starts here.
 label start:
+    $ guessed_correctly = False
     "What would you like to do?"
     menu:
         "Interrogate someone":
@@ -53,6 +53,8 @@ label accuse:
 
 label accuse_triangle:
     "You have accused triangle of misdeeds"
+    "You have gotten the killer"
+    $ guessed_correctly = True
     jump end
 
 label accuse_square:
@@ -65,4 +67,7 @@ label accuse_circle:
 
 label end:
     scene black
+    if guessed_correctly:
+        "Tell the player the whole story"
     "THE END"
+
