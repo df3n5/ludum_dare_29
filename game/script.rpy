@@ -281,7 +281,7 @@ label interrogate_square:
             jump interrogate_square
         "Have you ever killed anyone?":
             s "I'm not proud of it but yes."
-            c "Can you tell me anymore about that?"
+            c "Can you tell me any more about that?"
             s "Not that I feel like right now."
             jump interrogate_square
         "Did you kill the receptionist?":
@@ -404,13 +404,13 @@ label act5:
     show ci normal at right
     o "Thanks for your help Circle. That Square is off the streets now for good. I never trust shapes with less than 6 sides myself."
     c "Okay, that's incredibly racist. Please just leave me alone for the rest of my trip."
-    o "Okay, no problem. Let me know if anymore Squares bother you."
+    o "Okay, no problem. Let me know if any more Squares bother you."
 
     scene bg hotel lobby
     show ci normal at left
     show tri normal at right
     t "So you can spend the rest of your trip hanging out with me and Hexagon?"
-    c "Yeah, you two liars or the murderer. It was a hard decision."
+    c "Yeah, you two liars or the murderer. It was a genuinely hard decision."
     h "So." 
     t "This is awkward."
     h "Do you want to play a game?"
