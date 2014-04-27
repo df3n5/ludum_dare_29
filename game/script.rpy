@@ -25,7 +25,7 @@ define c = Character('Circle', color="#95ff87") #Circle
 # The game starts here.
 label start:
     $ guessed_correctly = False
-    #jump knightsknaves
+    #jump act2
     jump act4
     "What would you like to do?"
     menu:
@@ -33,6 +33,15 @@ label start:
              jump interrogate
         "Accuse someone":
              jump accuse
+
+label act1:
+    "Act 1"
+    jump act2
+
+label act2:
+    scene
+    "Act 2"
+    jump knightsknaves
 
 label knightsknaves:
     scene bg hotel lobby
@@ -93,6 +102,7 @@ label knightsknaves_success:
 
 label act3:
     scene
+    "Act 3"
     "Circle gets his room key from the door and heads upstairs."
     "He decides to take a nap after his long journey."
     "Two hours later..."
@@ -146,6 +156,7 @@ label act3:
 label act4:
     scene bg hotel lobby
     show ci normal at left
+    "Act 4"
 
     "What would you like to do?"
     menu:
