@@ -51,9 +51,10 @@ label act1:
     c "Hello. How did you know my name?"
     s "Hi. It's the same as your shape right? You wouldn't have to be a detective to figure that out."
     c "..."
-    s "Would you like to play a game?"
-    c "Em not really, I haven't checked in yet. Please excuse me."
-    s "I'm afraid I'm going to have to not excuse you. I'm on holiday with my two friends, Triangle and Hexagon, and they are driving me insane."
+    s "I overheard you say that you were in the FBI, you must be pretty clever then. Would you like to play a game?"
+    c "Em, not really, I haven't checked in yet. Please excuse me."
+    s "I'm afraid I'm going to have to not excuse you." 
+    s "I'm on holiday with my two friends, Triangle and Hexagon, and they are driving me insane."
     s "You will play, or ..."
     c "Fine, fine."
     s "Super!"
@@ -320,7 +321,7 @@ label interrogate_hexagon:
             h "Well..."
             h "I did kill some people in the past."
             h "But I've done my time in prison."
-            h "Your hair is pretty, can I touch it."
+            h "Your hair is pretty, can I touch it?"
             c "Eh, no but thanks."
             jump interrogate_hexagon
         "Did you kill the receptionist?":
@@ -392,7 +393,7 @@ label act5:
     show oct normal at left
     show sq normal at right
     o "I'm going to lock you up for a long time Square."
-    s "Oh I'm scared, my friends will come after you with a submarine."
+    s "Ohh I'm scared! My friends will come after you with our submarine."
     o "That never actually happened Square."
     s "Oh yeah. God damn it."
     h "How dare you take the Lord's name in vain!"
